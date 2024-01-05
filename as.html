@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>IRCTC Ticket Booking</h2>
+
+        <label for="train">Select Train:</label>
+        <select id="train" name="train" required>
+            <option value="train1">Train 1</option>
+            <option value="train2">Train 2</option>
+            <option value="train3">Train 3</option>
+            <!-- Add more train options as needed -->
+        </select>
+
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" required>
+
+        <label for="passengerName">Passenger Name:</label>
+        <input type="text" id="passengerName" name="passengerName" required>
+
+        <label for="passengerAge">Passenger Age:</label>
+        <input type="number" id="passengerAge" name="passengerAge" required>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="creditCard">Credit Card</option>
+            <option value="debitCard">Debit Card</option>
+            <!-- Add more payment options as needed -->
+        </select>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,2136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://maainfoweb.com/patan2023/excelTest1/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Import Customer CSV file </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="kkkkk">
+  <meta name="description" content="Import Excel File">
+  
+  <link rel="stylesheet" href="./Import Customer CSV file_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./Import Customer CSV file_files/jquery.dataTables.css"> 
+<link rel="stylesheet" type="text/css" href="./Import Customer CSV file_files/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="./Import Customer CSV file_files/buttons.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/jquery-3.6.0.min.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/jquery.dataTables.js.download"></script>
+
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/jquery-3.5.1.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/jquery.dataTables.min.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/dataTables.buttons.min.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/pdfmake.min.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/vfs_fonts.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/buttons.html5.min.js.download"></script>
+<script type="text/javascript" charset="utf8" src="./Import Customer CSV file_files/buttons.print.min.js.download"></script>
+
+<script>
+$(document).ready(function() {
+    $('#myTable').DataTable( {
+        "pageLength": 50,
+        dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'csvHtml5',
+                title: '768444451EvinceCSVExport'
+            },
+            {
+				
+                extend: 'pdfHtml5',
+                title: '1121822586EvincePdfExport'
+				
+				
+            }
+			
+        ]
+    } );
+   
+} );
+ 
+</script>
+
+<!--<script>
+$(document).ready( function () {
+    $('#myTable').DataTable({ destroy: true,"pageLength": 50});
+} );
+</script>-->
+
+ </head>
+ <body>    
+    <br><br>
+        <div class="container">
+            <div class="row">
+            <center>
+            <table>
+            <tbody><tr>
+                <td><img src="./Import Customer CSV file_files/hindu-flag-png.png" height="100px" width="100px"></td>
+                <td><b>&nbsp;&nbsp;&nbsp;&nbsp;રાષ્ટ્રીય સ્વયંસેવક સંઘ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    પાટણ જિલ્લો <br>
+                    કર્તવ્ય સંગમ  વિક્રમ સંવત-૨૦૮૦
+
+                </b>
+            </td>
+            </tr>
+            </tbody></table>
+            </center>
+            <p align="right"><a href="http://maainfoweb.com/patan2023/excelTest1/reg1.php"><button type="submit" class="btn btn-primary">New Regisration</button></a></p>
+            
+                <div id="myTable_wrapper" class="dataTables_wrapper no-footer"><div class="dt-buttons"> <button class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="myTable" type="button"><span>CSV</span></button> <button class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="myTable" type="button"><span>PDF</span></button> </div><div id="myTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="myTable"></label></div><table id="myTable" class="table table-bordered dataTable no-footer" border="1" aria-describedby="myTable_info">
+                <thead>
+                        <tr><th bgcolor="lightgray" class="sorting sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No.: activate to sort column descending" style="width: 22.5625px;">No.</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Reg no: activate to sort column ascending" style="width: 42.4125px;">Reg no</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 176.425px;">Name</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Mobile: activate to sort column ascending" style="width: 77.4375px;">Mobile</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="BirthDate: activate to sort column ascending" style="width: 63.0125px;">BirthDate</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Nagar-Taluko: activate to sort column ascending" style="width: 99.225px;">Nagar-Taluko</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="E-Name: activate to sort column ascending" style="width: 176.425px;">E-Name</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 42.7875px;">Status</th><th bgcolor="lightgray" class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="TaskPresentAbsent: activate to sort column ascending" style="width: 129.712px;">TaskPresentAbsent</th></tr> 
+                      </thead>
+                                        <tbody>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                <tr class="odd">
+                        		<td class="sorting_1">1</td>
+                        		<td><b>KS5001</b></td>
+                        		<td>SANJAYBHAI DINESHBHAI PRAJAPATI</td>
+                           	 	<td>6354157641</td>
+		 						<td>07/08/2003</td>
+		 						<td>??????? ??????</td>
+		 						<td>SANJAYBHAI DINESHBHAI PRAJAPATI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2164"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2164"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">2</td>
+                        		<td><b>KS5002</b></td>
+                        		<td>JAYESHBHAI VISHNUBHAI PATEL</td>
+                           	 	<td>9924119889</td>
+		 						<td>01/06/1983</td>
+		 						<td>??????? ??????</td>
+		 						<td>JAYESHBHAI VISHNUBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2165"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2165"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">3</td>
+                        		<td><b>KS5003</b></td>
+                        		<td>MAHESHBHAI VELAJIBHAI CHAUDHARI</td>
+                           	 	<td>9427065595</td>
+		 						<td>20/12/1974</td>
+		 						<td>??????? ??????</td>
+		 						<td>MAHESHBHAI VELAJIBHAI CHAUDHARI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2166"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2166"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">4</td>
+                        		<td><b>KS5004</b></td>
+                        		<td>SAVAN DILIPBHAI RAVAL</td>
+                           	 	<td>8401587693</td>
+		 						<td>13/01/1997</td>
+		 						<td>??????? ??????</td>
+		 						<td>SAVAN DILIPBHAI RAVAL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2167"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2167"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">5</td>
+                        		<td><b>KS5005</b></td>
+                        		<td>ROHITBHAI MADHAVDAS SADHU</td>
+                           	 	<td>9265495482</td>
+		 						<td>23/06/1998</td>
+		 						<td>??????? ??????</td>
+		 						<td>ROHITBHAI MADHAVDAS SADHU</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2168"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2168"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">6</td>
+                        		<td><b>KS5006</b></td>
+                        		<td>ANAND SHAILESHBHAI PRAJAPATI</td>
+                           	 	<td>9426987476</td>
+		 						<td>20/04/2005</td>
+		 						<td>??????? ??????</td>
+		 						<td>ANAND SHAILESHBHAI PRAJAPATI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2169"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2169"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">7</td>
+                        		<td><b>KS5007</b></td>
+                        		<td>SUNILBHAI BHARATJI THAKOR</td>
+                           	 	<td>9023077303</td>
+		 						<td>09/10/2004</td>
+		 						<td>??????? ??????</td>
+		 						<td>SUNILBHAI BHARATJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2170"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2170"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">8</td>
+                        		<td><b>KS5008</b></td>
+                        		<td>SADHIKBHAI BHUPATJI THAKOR</td>
+                           	 	<td>8849035924</td>
+		 						<td>01/06/2006</td>
+		 						<td>??????? ??????</td>
+		 						<td>SADHIKBHAI BHUPATJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2171"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2171"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">9</td>
+                        		<td><b>KS5009</b></td>
+                        		<td>JAYESHBHAI ARAVINDJI THAKOR</td>
+                           	 	<td>9265495482</td>
+		 						<td>07/12/2013</td>
+		 						<td>??????? ??????</td>
+		 						<td>JAYESHBHAI ARAVINDJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2172"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2172"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">10</td>
+                        		<td><b>KS5010</b></td>
+                        		<td>JAYDIPBHAI NARSINHJI THAKOR</td>
+                           	 	<td>8238511083</td>
+		 						<td>04/05/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>JAYDIPBHAI NARSINHJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2173"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2173"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">11</td>
+                        		<td><b>KS5011</b></td>
+                        		<td>KISHANBHAI JAGAJI THAKOR</td>
+                           	 	<td>9574781372</td>
+		 						<td>14/10/2012</td>
+		 						<td>??????? ??????</td>
+		 						<td>KISHANBHAI JAGAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2174"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2174"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">12</td>
+                        		<td><b>KS5012</b></td>
+                        		<td>JIGNESHBHAI DILIPAJI THAKOR</td>
+                           	 	<td>6352756122</td>
+		 						<td>28/08/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>JIGNESHBHAI DILIPAJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2175"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2175"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">13</td>
+                        		<td><b>KS5013</b></td>
+                        		<td>YUVRAJBHAI JAYARAMJI THAKOR</td>
+                           	 	<td>9712296090</td>
+		 						<td>06/12/2010</td>
+		 						<td>??????? ??????</td>
+		 						<td>YUVRAJBHAI JAYARAMJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2176"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2176"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">14</td>
+                        		<td><b>KS5014</b></td>
+                        		<td>PIYUSHBHAI RASIKBHAI PRAJAPATI</td>
+                           	 	<td>9909233395</td>
+		 						<td>17/03/2012</td>
+		 						<td>??????? ??????</td>
+		 						<td>PIYUSHBHAI RASIKBHAI PRAJAPATI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2177"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2177"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">15</td>
+                        		<td><b>KS5015</b></td>
+                        		<td>PIYUSHBHAI VIKRAMJI THAKOR</td>
+                           	 	<td>6351716570</td>
+		 						<td>29/03/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>PIYUSHBHAI VIKRAMJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2178"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2178"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">16</td>
+                        		<td><b>KS5016</b></td>
+                        		<td>PRTHVIBHAI DHIRAJI THAKOR</td>
+                           	 	<td>9265495482</td>
+		 						<td>23/06/2009</td>
+		 						<td>??????? ??????</td>
+		 						<td>PRTHVIBHAI DHIRAJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2179"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2179"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">17</td>
+                        		<td><b>KS5017</b></td>
+                        		<td>VISHALBHAI LILAJI THAKOR</td>
+                           	 	<td>9898445393</td>
+		 						<td>13/02/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>VISHALBHAI LILAJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2180"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2180"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">18</td>
+                        		<td><b>KS5018</b></td>
+                        		<td>KUNDANBHAI RANACHHODBHAI RAVAL</td>
+                           	 	<td>9512874297</td>
+		 						<td>05/03/2012</td>
+		 						<td>??????? ??????</td>
+		 						<td>KUNDANBHAI RANACHHODBHAI RAVAL</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2181"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2181"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">19</td>
+                        		<td><b>KS5019</b></td>
+                        		<td>VISHALBHAI KANUBHAI RAVAL</td>
+                           	 	<td>7862994275</td>
+		 						<td>24/08/2008</td>
+		 						<td>??????? ??????</td>
+		 						<td>VISHALBHAI KANUBHAI RAVAL</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2182"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2182"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">20</td>
+                        		<td><b>KS5020</b></td>
+                        		<td>SUMITBHAI CHATURAJI THAKOR</td>
+                           	 	<td>6355134631</td>
+		 						<td>22/10/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>SUMITBHAI CHATURAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2183"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2183"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">21</td>
+                        		<td><b>KS5021</b></td>
+                        		<td>ASHIKBHAI JHILAJI THAKOR</td>
+                           	 	<td>9265495482</td>
+		 						<td>06/06/2012</td>
+		 						<td>??????? ??????</td>
+		 						<td>ASHIKBHAI JHILAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2184"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2184"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">22</td>
+                        		<td><b>KS5023</b></td>
+                        		<td>VIJAYBHAI TEJAJI THAKOR</td>
+                           	 	<td>8238845098</td>
+		 						<td>17/10/1997</td>
+		 						<td>??????? ??????</td>
+		 						<td>VIJAYBHAI TEJAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2185"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2185"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">23</td>
+                        		<td><b>KS5024</b></td>
+                        		<td>AKASHBHAI VISHNUJI THAKOR</td>
+                           	 	<td>6352672667</td>
+		 						<td>21/05/2004</td>
+		 						<td>??????? ??????</td>
+		 						<td>AKASHBHAI VISHNUJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2186"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2186"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">24</td>
+                        		<td><b>KS5025</b></td>
+                        		<td>SHUBHAMBHAI NARESHBHAI PRAJAPATI</td>
+                           	 	<td>9979055254</td>
+		 						<td>28/07/2010</td>
+		 						<td>??????? ??????</td>
+		 						<td>SHUBHAMBHAI NARESHBHAI PRAJAPATI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2187"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2187"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">25</td>
+                        		<td><b>KS5026</b></td>
+                        		<td>RONAKBHAI MUKESHBHAI RAVAL</td>
+                           	 	<td>6352970589</td>
+		 						<td>11/04/2008</td>
+		 						<td>??????? ??????</td>
+		 						<td>RONAKBHAI MUKESHBHAI RAVAL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2188"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2188"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">26</td>
+                        		<td><b>KS5027</b></td>
+                        		<td>NIRBHAI PANKAJBHAI PATEL</td>
+                           	 	<td>9429225024</td>
+		 						<td>16/12/2009</td>
+		 						<td>??????? ??????</td>
+		 						<td>NIRBHAI PANKAJBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2189"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2189"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">27</td>
+                        		<td><b>KS5028</b></td>
+                        		<td>HARSHILBHAI PRAVINBHAI THAKOR</td>
+                           	 	<td>6354386116</td>
+		 						<td>04/07/2011</td>
+		 						<td>??????? ??????</td>
+		 						<td>HARSHILBHAI PRAVINBHAI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2190"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2190"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">28</td>
+                        		<td><b>KS5029</b></td>
+                        		<td>BHAUNIKBHAI MUKESHBHAI VYAS</td>
+                           	 	<td>8801036754</td>
+		 						<td>20/11/2009</td>
+		 						<td>??????? ??????</td>
+		 						<td>BHAUNIKBHAI MUKESHBHAI VYAS</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2191"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2191"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">29</td>
+                        		<td><b>KS5030</b></td>
+                        		<td>ARYBHAI HARSHADBHAI PATEL</td>
+                           	 	<td>9723464864</td>
+		 						<td>25/03/2004</td>
+		 						<td>??????? ??????</td>
+		 						<td>ARYBHAI HARSHADBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2192"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2192"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">30</td>
+                        		<td><b>KS5031</b></td>
+                        		<td>DHVANIKBHAI DIPAKBHAI VYAS</td>
+                           	 	<td>8801089239</td>
+		 						<td>14/05/2009</td>
+		 						<td>??????? ??????</td>
+		 						<td>DHVANIKBHAI DIPAKBHAI VYAS</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2193"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2193"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">31</td>
+                        		<td><b>KS5032</b></td>
+                        		<td>ASHISHBHAI DIVANAJI THAKOR</td>
+                           	 	<td>6355385083</td>
+		 						<td>09/07/2010</td>
+		 						<td>??????? ??????</td>
+		 						<td>ASHISHBHAI DIVANAJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2194"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2194"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">32</td>
+                        		<td><b>KS5033</b></td>
+                        		<td>JIGARJI VALAJI THAKOR</td>
+                           	 	<td>9313984925</td>
+		 						<td>07/06/2002</td>
+		 						<td>??????? ??????</td>
+		 						<td>JIGARJI VALAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2195"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2195"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">33</td>
+                        		<td><b>KS5034</b></td>
+                        		<td>ASHIKBHAI JAGADISHAJI THAKOR</td>
+                           	 	<td>8160357990</td>
+		 						<td>25/06/2010</td>
+		 						<td>??????? ??????</td>
+		 						<td>ASHIKBHAI JAGADISHAJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2196"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2196"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">34</td>
+                        		<td><b>KS5035</b></td>
+                        		<td>HITESHBHAI ARAVINDJI THAKOR</td>
+                           	 	<td>7575834054</td>
+		 						<td>02/06/2013</td>
+		 						<td>??????? ??????</td>
+		 						<td>HITESHBHAI ARAVINDJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2197"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2197"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">35</td>
+                        		<td><b>KS5036</b></td>
+                        		<td>MUKESHBHAI MADHAVLAL PATEL</td>
+                           	 	<td>9909534747</td>
+		 						<td>11/7/0071</td>
+		 						<td>??????? ??????</td>
+		 						<td>MUKESHBHAI MADHAVLAL PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2198"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2198"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">36</td>
+                        		<td><b>KS5037</b></td>
+                        		<td>JAYENDRSINH DASHARATHJI SOLANKI</td>
+                           	 	<td>9265096893</td>
+		 						<td>25/08/1995</td>
+		 						<td>??????? ??????</td>
+		 						<td>JAYENDRSINH DASHARATHJI SOLANKI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2199"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2199"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">37</td>
+                        		<td><b>KS5038</b></td>
+                        		<td>MAHESHBHAI BABUJI THAKOR</td>
+                           	 	<td>7201981242</td>
+		 						<td>02/11/1999</td>
+		 						<td>??????? ??????</td>
+		 						<td>MAHESHBHAI BABUJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2200"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2200"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">38</td>
+                        		<td><b>KS5039</b></td>
+                        		<td>BHARATSINH RAJAJI VAGHELA</td>
+                           	 	<td>8980180850</td>
+		 						<td>01/06/1963</td>
+		 						<td>??????? ??????</td>
+		 						<td>BHARATSINH RAJAJI VAGHELA</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2201"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2201"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">39</td>
+                        		<td><b>KS5040</b></td>
+                        		<td>JAYADIPBHAI PRAVINJI THAKOR</td>
+                           	 	<td>7600702213</td>
+		 						<td>20/04/2013</td>
+		 						<td>??????? ??????</td>
+		 						<td>JAYADIPBHAI PRAVINJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2202"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2202"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">40</td>
+                        		<td><b>KS5041</b></td>
+                        		<td>DEVBHAI PRAFULCHANDR VYAS</td>
+                           	 	<td>9712295990</td>
+		 						<td>05/04/2008</td>
+		 						<td>??????? ??????</td>
+		 						<td>DEVBHAI PRAFULCHANDR VYAS</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2203"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2203"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">41</td>
+                        		<td><b>KS5042</b></td>
+                        		<td>DRONBHAI JAYESHBHAI DAVE</td>
+                           	 	<td>9328043810</td>
+		 						<td>22/09/2002</td>
+		 						<td>??????? ??????</td>
+		 						<td>DRONBHAI JAYESHBHAI DAVE</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2204"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2204"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">42</td>
+                        		<td><b>KS5043</b></td>
+                        		<td>PRADIPBHAI HASMUKHBHAI VYAS</td>
+                           	 	<td>7069250250</td>
+		 						<td>04/07/1989</td>
+		 						<td>??????? ??????</td>
+		 						<td>PRADIPBHAI HASMUKHBHAI VYAS</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2205"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2205"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">43</td>
+                        		<td><b>KS5044</b></td>
+                        		<td>ZILBHAI RAMANBHAI PATEL</td>
+                           	 	<td>9773155930</td>
+		 						<td>16/03/2004</td>
+		 						<td>??????? ??????</td>
+		 						<td>ZILBHAI RAMANBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2206"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2206"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">44</td>
+                        		<td><b>KS5045</b></td>
+                        		<td>DIPBHAI BHARATBHAI PATEL</td>
+                           	 	<td>7046751309</td>
+		 						<td>02/01/2001</td>
+		 						<td>??????? ??????</td>
+		 						<td>DIPBHAI BHARATBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2207"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2207"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">45</td>
+                        		<td><b>KS5046</b></td>
+                        		<td>AUMBHAI NARENDRBHAI PATEL</td>
+                           	 	<td>9726491973</td>
+		 						<td>10/11/2009</td>
+		 						<td>??????? ??????</td>
+		 						<td>AUMBHAI NARENDRBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2208"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2208"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">46</td>
+                        		<td><b>KS5047</b></td>
+                        		<td>SNEHILBHAI SANJAYBHAI PATEL</td>
+                           	 	<td>9427544227</td>
+		 						<td>14/02/2013</td>
+		 						<td>??????? ??????</td>
+		 						<td>SNEHILBHAI SANJAYBHAI PATEL</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2209"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2209"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">47</td>
+                        		<td><b>KS5048</b></td>
+                        		<td>MANOJBHAI RANCHHODBHAI PATEL</td>
+                           	 	<td>9979369582</td>
+		 						<td>11/08/1983</td>
+		 						<td>??????? ??????</td>
+		 						<td>MANOJBHAI RANCHHODBHAI PATEL</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2210"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2210"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">48</td>
+                        		<td><b>KS5049</b></td>
+                        		<td>BHAGVANSINH KASALSANG SOLANKI</td>
+                           	 	<td>9924290571</td>
+		 						<td>01/08/1968</td>
+		 						<td>??????? ??????</td>
+		 						<td>BHAGVANSINH KASALSANG SOLANKI</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2211"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2211"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="odd">
+                        		<td class="sorting_1">49</td>
+                        		<td><b>KS5050</b></td>
+                        		<td>ARJUNSINH VINESHJI THAKOR</td>
+                           	 	<td>7874011081</td>
+		 						<td>12/09/2003</td>
+		 						<td>??????? ??????</td>
+		 						<td>ARJUNSINH VINESHJI THAKOR</td>
+                                <td>0</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2212"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2212"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr><tr class="even">
+                        		<td class="sorting_1">50</td>
+                        		<td><b>KS5051</b></td>
+                        		<td>RAHULJI LALJI THAKOR</td>
+                           	 	<td>9662911981</td>
+		 						<td>06/06/2004</td>
+		 						<td>??????? ??????</td>
+		 						<td>RAHULJI LALJI THAKOR</td>
+                                <td>1</td>
+                                <td><a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=present&amp;id=2213"><button type="submit" class="btn btn-success"><small>Present</small></button></a>
+                                <a href="http://maainfoweb.com/patan2023/excelTest1/index.php?task=absent&amp;id=2213"><button type="submit" class="btn btn-warning"><small>Absent</small></button></a>
+                                </td>
+                        </tr></tbody></table><div class="dataTables_info" id="myTable_info" role="status" aria-live="polite">Showing 1 to 50 of 1,451 entries</div><div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate"><a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="-1" id="myTable_previous">Previous</a><span><a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">30</a></span><a class="paginate_button next" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next">Next</a></div></div>
+        </div>
+ 
+ 
+
+</div></body></html>
